@@ -38,17 +38,17 @@ export default function Services() {
     <section
       id="services"
       className="py-24 px-4 sm:px-6 lg:px-8 relative transition-colors duration-200"
-      style={{ background: "var(--ts-bg)" }}
+      style={{ background: "var(--sp-bg)" }}
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <span className="text-sm font-semibold tracking-widest uppercase transition-colors duration-200" style={{ color: "var(--ts-fg-muted)" }}>
+          <span className="text-sm font-semibold tracking-widest uppercase transition-colors duration-200" style={{ color: "var(--sp-fg-muted)" }}>
             What We Do
           </span>
-          <h2 className="mt-3 text-4xl sm:text-5xl font-bold transition-colors duration-200" style={{ color: "var(--ts-fg)" }}>
+          <h2 className="mt-3 text-4xl sm:text-5xl font-bold transition-colors duration-200" style={{ color: "var(--sp-fg)" }}>
             Our Services
           </h2>
-          <p className="mt-4 max-w-2xl mx-auto text-lg transition-colors duration-200" style={{ color: "var(--ts-fg-muted)" }}>
+          <p className="mt-4 max-w-2xl mx-auto text-lg transition-colors duration-200" style={{ color: "var(--sp-fg-muted)" }}>
             From cloud infrastructure to business automation, we deliver end-to-end technical
             solutions tailored to your stack.
           </p>
@@ -60,19 +60,19 @@ export default function Services() {
             return (
               <div
                 key={service.title}
-                className="ts-card group relative p-6 rounded-2xl border transition-all duration-300 hover:shadow-xl"
-                style={{ background: "var(--ts-card)" }}
+                className="sp-card group relative p-6 rounded-2xl border transition-all duration-300 hover:shadow-xl"
+                style={{ background: "var(--sp-card)" }}
               >
                 <div
                   className="inline-flex p-3 rounded-xl mb-5 shadow-lg"
-                  style={{ background: "var(--ts-icon-bg)" }}
+                  style={{ background: "var(--sp-icon-bg)" }}
                 >
-                  <Icon className="w-5 h-5" style={{ color: "var(--ts-icon-fg)" }} />
+                  <Icon className="w-5 h-5" style={{ color: "var(--sp-icon-fg)" }} />
                 </div>
-                <h3 className="text-lg font-semibold mb-3 leading-snug transition-colors duration-200" style={{ color: "var(--ts-fg)" }}>
+                <h3 className="text-lg font-semibold mb-3 leading-snug transition-colors duration-200" style={{ color: "var(--sp-fg)" }}>
                   {service.title}
                 </h3>
-                <p className="text-sm leading-relaxed transition-colors duration-200" style={{ color: "var(--ts-fg-muted)" }}>
+                <p className="text-sm leading-relaxed transition-colors duration-200" style={{ color: "var(--sp-fg-muted)" }}>
                   {service.description}
                 </p>
               </div>

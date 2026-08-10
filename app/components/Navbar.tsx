@@ -17,17 +17,17 @@ export default function Navbar() {
   return (
     <header
       className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b transition-colors duration-200"
-      style={{ background: "var(--ts-nav-bg)", borderColor: "var(--ts-nav-border)" }}
+      style={{ background: "var(--sp-nav-bg)", borderColor: "var(--sp-nav-border)" }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         <a href="#" className="flex items-center gap-2">
           <div
             className="w-8 h-8 rounded-lg flex items-center justify-center"
-            style={{ background: "var(--ts-icon-bg)" }}
+            style={{ background: "var(--sp-icon-bg)" }}
           >
-            <Zap className="w-4 h-4" style={{ color: "var(--ts-icon-fg)" }} />
+            <Zap className="w-4 h-4" style={{ color: "var(--sp-icon-fg)" }} />
           </div>
-          <span className="font-bold text-lg tracking-tight" style={{ color: "var(--ts-fg)" }}>
+          <span className="font-bold text-lg tracking-tight" style={{ color: "var(--sp-fg)" }}>
             Spreelance
           </span>
         </a>
@@ -38,7 +38,7 @@ export default function Navbar() {
               key={l.href}
               href={l.href}
               className="text-sm font-medium transition-colors duration-200 hover:opacity-100"
-              style={{ color: "var(--ts-fg-muted)" }}
+              style={{ color: "var(--sp-fg-muted)" }}
             >
               {l.label}
             </a>
@@ -47,7 +47,7 @@ export default function Navbar() {
           <a
             href="#contact"
             className="px-4 py-2 rounded-lg text-sm font-semibold transition-colors duration-200"
-            style={{ background: "var(--ts-btn-bg)", color: "var(--ts-btn-fg)" }}
+            style={{ background: "var(--sp-btn-bg)", color: "var(--sp-btn-fg)" }}
           >
             Hire Us
           </a>
@@ -57,7 +57,7 @@ export default function Navbar() {
           <ThemeToggle />
           <button
             className="transition-colors"
-            style={{ color: "var(--ts-fg-muted)" }}
+            style={{ color: "var(--sp-fg-muted)" }}
             onClick={() => setOpen(!open)}
             aria-label="Toggle menu"
           >
@@ -69,7 +69,7 @@ export default function Navbar() {
       {open && (
         <div
           className="md:hidden border-t px-4 py-4 flex flex-col gap-4 transition-colors duration-200"
-          style={{ background: "var(--ts-bg)", borderColor: "var(--ts-nav-border)" }}
+          style={{ background: "var(--sp-bg)", borderColor: "var(--sp-nav-border)" }}
         >
           {links.map((l) => (
             <a
@@ -77,7 +77,7 @@ export default function Navbar() {
               href={l.href}
               onClick={() => setOpen(false)}
               className="text-base font-medium transition-colors"
-              style={{ color: "var(--ts-fg-muted)" }}
+              style={{ color: "var(--sp-fg-muted)" }}
             >
               {l.label}
             </a>
@@ -86,7 +86,7 @@ export default function Navbar() {
             href="#contact"
             onClick={() => setOpen(false)}
             className="mt-2 px-4 py-2 rounded-lg text-sm font-semibold text-center transition-colors"
-            style={{ background: "var(--ts-btn-bg)", color: "var(--ts-btn-fg)" }}
+            style={{ background: "var(--sp-btn-bg)", color: "var(--sp-btn-fg)" }}
           >
             Hire Us
           </a>

@@ -2,97 +2,97 @@
 
 /* ── Dark mode (default) ── */
 :root {
-  --ts-bg: #000000;
-  --ts-bg-alt: #080808;
-  --ts-card: #0a0a0a;
-  --ts-fg: #ffffff;
-  --ts-fg-muted: #a3a3a3;
-  --ts-fg-subtle: #737373;
-  --ts-fg-faint: #525252;
-  --ts-border: rgba(255,255,255,0.1);
-  --ts-border-hover: rgba(255,255,255,0.25);
-  --ts-icon-bg: #ffffff;
-  --ts-icon-fg: #000000;
-  --ts-btn-bg: #ffffff;
-  --ts-btn-fg: #000000;
-  --ts-btn-hover: #e5e5e5;
-  --ts-btn2-border: rgba(255,255,255,0.2);
-  --ts-btn2-border-hover: rgba(255,255,255,0.5);
-  --ts-btn2-fg: #ffffff;
-  --ts-badge-bg: #171717;
-  --ts-badge-fg: #d4d4d4;
-  --ts-badge-border: rgba(255,255,255,0.1);
-  --ts-input-bg: #171717;
-  --ts-input-border: rgba(255,255,255,0.1);
-  --ts-input-border-focus: rgba(255,255,255,0.4);
-  --ts-nav-bg: rgba(0,0,0,0.8);
-  --ts-nav-border: rgba(255,255,255,0.1);
-  --ts-avatar-bg: #262626;
-  --ts-avatar-ring: rgba(255,255,255,0.1);
-  --ts-avatar-ring-hover: rgba(255,255,255,0.2);
-  --ts-grad-from: #ffffff;
-  --ts-grad-to: #a3a3a3;
-  --ts-grid-line: rgba(255,255,255,0.3);
-  --ts-step-bg: rgba(255,255,255,0.05);
-  --ts-step-border: rgba(255,255,255,0.2);
-  --ts-check-bg: #ffffff;
-  --ts-check-fg: #000000;
+  --sp-bg: #000000;
+  --sp-bg-alt: #080808;
+  --sp-card: #0a0a0a;
+  --sp-fg: #ffffff;
+  --sp-fg-muted: #a3a3a3;
+  --sp-fg-subtle: #737373;
+  --sp-fg-faint: #525252;
+  --sp-border: rgba(255,255,255,0.1);
+  --sp-border-hover: rgba(255,255,255,0.25);
+  --sp-icon-bg: #ffffff;
+  --sp-icon-fg: #000000;
+  --sp-btn-bg: #ffffff;
+  --sp-btn-fg: #000000;
+  --sp-btn-hover: #e5e5e5;
+  --sp-btn2-border: rgba(255,255,255,0.2);
+  --sp-btn2-border-hover: rgba(255,255,255,0.5);
+  --sp-btn2-fg: #ffffff;
+  --sp-badge-bg: #171717;
+  --sp-badge-fg: #d4d4d4;
+  --sp-badge-border: rgba(255,255,255,0.1);
+  --sp-input-bg: #171717;
+  --sp-input-border: rgba(255,255,255,0.1);
+  --sp-input-border-focus: rgba(255,255,255,0.4);
+  --sp-nav-bg: rgba(0,0,0,0.8);
+  --sp-nav-border: rgba(255,255,255,0.1);
+  --sp-avatar-bg: #262626;
+  --sp-avatar-ring: rgba(255,255,255,0.1);
+  --sp-avatar-ring-hover: rgba(255,255,255,0.2);
+  --sp-grad-from: #ffffff;
+  --sp-grad-to: #a3a3a3;
+  --sp-grid-line: rgba(255,255,255,0.3);
+  --sp-step-bg: rgba(255,255,255,0.05);
+  --sp-step-border: rgba(255,255,255,0.2);
+  --sp-check-bg: #ffffff;
+  --sp-check-fg: #000000;
 }
 
 /* ── Light mode ── */
 html.light {
-  --ts-bg: #ffffff;
-  --ts-bg-alt: #f5f5f5;
-  --ts-card: #f0f0f0;
-  --ts-fg: #000000;
-  --ts-fg-muted: #525252;
-  --ts-fg-subtle: #737373;
-  --ts-fg-faint: #a3a3a3;
-  --ts-border: rgba(0,0,0,0.08);
-  --ts-border-hover: rgba(0,0,0,0.2);
-  --ts-icon-bg: #000000;
-  --ts-icon-fg: #ffffff;
-  --ts-btn-bg: #000000;
-  --ts-btn-fg: #ffffff;
-  --ts-btn-hover: #262626;
-  --ts-btn2-border: rgba(0,0,0,0.15);
-  --ts-btn2-border-hover: rgba(0,0,0,0.4);
-  --ts-btn2-fg: #000000;
-  --ts-badge-bg: #e5e5e5;
-  --ts-badge-fg: #404040;
-  --ts-badge-border: rgba(0,0,0,0.08);
-  --ts-input-bg: #ebebeb;
-  --ts-input-border: rgba(0,0,0,0.1);
-  --ts-input-border-focus: rgba(0,0,0,0.4);
-  --ts-nav-bg: rgba(255,255,255,0.85);
-  --ts-nav-border: rgba(0,0,0,0.08);
-  --ts-avatar-bg: #d4d4d4;
-  --ts-avatar-ring: rgba(0,0,0,0.08);
-  --ts-avatar-ring-hover: rgba(0,0,0,0.15);
-  --ts-grad-from: #000000;
-  --ts-grad-to: #525252;
-  --ts-grid-line: rgba(0,0,0,0.12);
-  --ts-step-bg: rgba(0,0,0,0.04);
-  --ts-step-border: rgba(0,0,0,0.12);
-  --ts-check-bg: #000000;
-  --ts-check-fg: #ffffff;
+  --sp-bg: #ffffff;
+  --sp-bg-alt: #f5f5f5;
+  --sp-card: #f0f0f0;
+  --sp-fg: #000000;
+  --sp-fg-muted: #525252;
+  --sp-fg-subtle: #737373;
+  --sp-fg-faint: #a3a3a3;
+  --sp-border: rgba(0,0,0,0.08);
+  --sp-border-hover: rgba(0,0,0,0.2);
+  --sp-icon-bg: #000000;
+  --sp-icon-fg: #ffffff;
+  --sp-btn-bg: #000000;
+  --sp-btn-fg: #ffffff;
+  --sp-btn-hover: #262626;
+  --sp-btn2-border: rgba(0,0,0,0.15);
+  --sp-btn2-border-hover: rgba(0,0,0,0.4);
+  --sp-btn2-fg: #000000;
+  --sp-badge-bg: #e5e5e5;
+  --sp-badge-fg: #404040;
+  --sp-badge-border: rgba(0,0,0,0.08);
+  --sp-input-bg: #ebebeb;
+  --sp-input-border: rgba(0,0,0,0.1);
+  --sp-input-border-focus: rgba(0,0,0,0.4);
+  --sp-nav-bg: rgba(255,255,255,0.85);
+  --sp-nav-border: rgba(0,0,0,0.08);
+  --sp-avatar-bg: #d4d4d4;
+  --sp-avatar-ring: rgba(0,0,0,0.08);
+  --sp-avatar-ring-hover: rgba(0,0,0,0.15);
+  --sp-grad-from: #000000;
+  --sp-grad-to: #525252;
+  --sp-grid-line: rgba(0,0,0,0.12);
+  --sp-step-bg: rgba(0,0,0,0.04);
+  --sp-step-border: rgba(0,0,0,0.12);
+  --sp-check-bg: #000000;
+  --sp-check-fg: #ffffff;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-.ts-card {
-  border-color: var(--ts-border);
+.sp-card {
+  border-color: var(--sp-border);
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
-.ts-card:hover {
-  border-color: var(--ts-border-hover);
+.sp-card:hover {
+  border-color: var(--sp-border-hover);
 }
 
 body {
-  background-color: var(--ts-bg);
-  color: var(--ts-fg);
+  background-color: var(--sp-bg);
+  color: var(--sp-fg);
   font-family: var(--font-geist-sans, Arial, Helvetica, sans-serif);
   transition: background-color 0.2s ease, color 0.2s ease;
 }

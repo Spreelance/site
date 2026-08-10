@@ -18,27 +18,27 @@ export default function Footer() {
   return (
     <footer
       className="border-t py-12 px-4 sm:px-6 lg:px-8 transition-colors duration-200"
-      style={{ background: "var(--ts-bg-alt)", borderColor: "var(--ts-nav-border)" }}
+      style={{ background: "var(--sp-bg-alt)", borderColor: "var(--sp-nav-border)" }}
     >
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
           <div>
             <a href="#" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ background: "var(--ts-icon-bg)" }}>
-                <Zap className="w-4 h-4" style={{ color: "var(--ts-icon-fg)" }} />
+              <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ background: "var(--sp-icon-bg)" }}>
+                <Zap className="w-4 h-4" style={{ color: "var(--sp-icon-fg)" }} />
               </div>
-              <span className="font-bold text-lg tracking-tight transition-colors duration-200" style={{ color: "var(--ts-fg)" }}>
+              <span className="font-bold text-lg tracking-tight transition-colors duration-200" style={{ color: "var(--sp-fg)" }}>
                 Spreelance
               </span>
             </a>
-            <p className="text-sm leading-relaxed max-w-xs transition-colors duration-200" style={{ color: "var(--ts-fg-subtle)" }}>
+            <p className="text-sm leading-relaxed max-w-xs transition-colors duration-200" style={{ color: "var(--sp-fg-subtle)" }}>
               Enterprise-Grade Tech, Freelance Flexibility. Salesforce, Cloud, and Golang
               specialists for hire.
             </p>
           </div>
 
           <div>
-            <p className="font-semibold text-sm mb-4 transition-colors duration-200" style={{ color: "var(--ts-fg)" }}>
+            <p className="font-semibold text-sm mb-4 transition-colors duration-200" style={{ color: "var(--sp-fg)" }}>
               Navigation
             </p>
             <ul className="flex flex-col gap-2.5">
@@ -47,7 +47,7 @@ export default function Footer() {
                   <a
                     href={link.href}
                     className="text-sm transition-colors duration-200"
-                    style={{ color: "var(--ts-fg-subtle)" }}
+                    style={{ color: "var(--sp-fg-subtle)" }}
                   >
                     {link.label}
                   </a>
@@ -57,7 +57,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className="font-semibold text-sm mb-4 transition-colors duration-200" style={{ color: "var(--ts-fg)" }}>
+            <p className="font-semibold text-sm mb-4 transition-colors duration-200" style={{ color: "var(--sp-fg)" }}>
               Connect With Us
             </p>
             <ul className="flex flex-col gap-3">
@@ -68,10 +68,10 @@ export default function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-sm transition-colors duration-200"
-                    style={{ color: "var(--ts-fg-subtle)" }}
+                    style={{ color: "var(--sp-fg-subtle)" }}
                     aria-label={`${member.name} on LinkedIn`}
                   >
-                    <LinkedInIcon className="w-4 h-4" style={{ color: "var(--ts-fg-muted)" }} />
+                    <LinkedInIcon className="w-4 h-4" style={{ color: "var(--sp-fg-muted)" }} />
                     {member.name}
                   </a>
                 </li>
@@ -82,12 +82,12 @@ export default function Footer() {
 
         <div
           className="border-t pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 transition-colors duration-200"
-          style={{ borderColor: "var(--ts-nav-border)" }}
+          style={{ borderColor: "var(--sp-nav-border)" }}
         >
-          <p className="text-xs transition-colors duration-200" style={{ color: "var(--ts-fg-faint)" }}>
+          <p className="text-xs transition-colors duration-200" style={{ color: "var(--sp-fg-faint)" }}>
             © {new Date().getFullYear()} Spreelance. All rights reserved.
           </p>
-          <p className="text-xs transition-colors duration-200" style={{ color: "var(--ts-fg-faint)" }}>
+          <p className="text-xs transition-colors duration-200" style={{ color: "var(--sp-fg-faint)" }}>
             Built with Next.js & Tailwind CSS
           </p>
         </div>

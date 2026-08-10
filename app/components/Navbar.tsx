@@ -28,7 +28,7 @@ export default function Navbar() {
             <Zap className="w-4 h-4" style={{ color: "var(--ts-icon-fg)" }} />
           </div>
           <span className="font-bold text-lg tracking-tight" style={{ color: "var(--ts-fg)" }}>
-            TriStack<span style={{ color: "var(--ts-fg-muted)" }}> Solutions</span>
+            Spreelance
           </span>
         </a>
 

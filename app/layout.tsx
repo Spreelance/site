@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TriStack Solutions | Enterprise-Grade Tech, Freelance Flexibility",
+  title: "Spreelance | Enterprise-Grade Tech, Freelance Flexibility",
   description:
     "A team of 3 specialists in Salesforce, Cloud Architecture, and Golang Microservices helping businesses build better systems.",
 };

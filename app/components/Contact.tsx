@@ -86,11 +86,11 @@ export default function Contact() {
                 Prefer email?
               </p>
               <a
-                href="mailto:hello@tristacksolutions.com"
+                href="mailto:hello@spreelance.com"
                 className="font-semibold text-sm break-all transition-colors duration-200"
                 style={{ color: "var(--ts-fg)" }}
               >
-                hello@tristacksolutions.com
+                hello@spreelance.com
               </a>
             </div>
           </div>

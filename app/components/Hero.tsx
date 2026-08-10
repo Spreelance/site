@@ -45,7 +45,7 @@ export default function Hero() {
         </h1>
 
         <p className="text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed mb-12 transition-colors duration-200" style={{ color: "var(--ts-fg-muted)" }}>
-          We are <span className="font-semibold" style={{ color: "var(--ts-fg)" }}>TriStack Solutions</span>, a team of 3
+          We are <span className="font-semibold" style={{ color: "var(--ts-fg)" }}>Spreelance</span>, a team of 3
           specialists in Salesforce, Cloud Architecture, and Golang Microservices helping businesses
           build better systems.
         </p>

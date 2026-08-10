@@ -28,7 +28,7 @@ export default function Footer() {
                 <Zap className="w-4 h-4" style={{ color: "var(--ts-icon-fg)" }} />
               </div>
               <span className="font-bold text-lg tracking-tight transition-colors duration-200" style={{ color: "var(--ts-fg)" }}>
-                TriStack<span style={{ color: "var(--ts-fg-muted)" }}> Solutions</span>
+                Spreelance
               </span>
             </a>
             <p className="text-sm leading-relaxed max-w-xs transition-colors duration-200" style={{ color: "var(--ts-fg-subtle)" }}>
@@ -85,7 +85,7 @@ export default function Footer() {
           style={{ borderColor: "var(--ts-nav-border)" }}
         >
           <p className="text-xs transition-colors duration-200" style={{ color: "var(--ts-fg-faint)" }}>
-            © {new Date().getFullYear()} TriStack Solutions. All rights reserved.
+            © {new Date().getFullYear()} Spreelance. All rights reserved.
           </p>
           <p className="text-xs transition-colors duration-200" style={{ color: "var(--ts-fg-faint)" }}>
             Built with Next.js & Tailwind CSS

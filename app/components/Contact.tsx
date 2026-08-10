@@ -131,7 +131,7 @@ export default function Contact() {
                       Name <span style={{ color: "var(--sp-fg)" }}>*</span>
                     </label>
                     <input type="text" name="name" required value={form.name} onChange={handleChange} placeholder="Jane Smith"
-                      className={inputClass} style={{ ...inputStyle, ["--placeholder-color" as string]: "var(--sp-fg-subtle)" }}
+                      className={inputClass} style={inputStyle}
                       onFocus={(e) => (e.target.style.borderColor = "var(--sp-input-border-focus)")}
                       onBlur={(e) => (e.target.style.borderColor = "var(--sp-input-border)")}
                     />
@@ -177,7 +177,7 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-sm disabled:opacity-50 transition-colors duration-200 mt-1"
+                  className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-full font-semibold text-sm disabled:opacity-50 transition-colors duration-200 mt-1"
                   style={{ background: "var(--sp-btn-bg)", color: "var(--sp-btn-fg)" }}
                 >
                   {loading ? (

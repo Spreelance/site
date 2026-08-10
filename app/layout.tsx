@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Spreelance | Enterprise-Grade Tech, Freelance Flexibility",
+  title: "spreelance | Enterprise-Grade Tech, Freelance Flexibility",
   description:
     "A team of 3 specialists in Salesforce, Cloud Architecture, and Golang Microservices helping businesses build better systems.",
 };
@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="en" className={`light ${geistSans.variable} ${geistMono.variable}`}>
       <body className="min-h-screen antialiased">
         <ThemeProvider>{children}</ThemeProvider>
       </body>

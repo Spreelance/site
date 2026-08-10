@@ -31,7 +31,7 @@ export default function WhyUs() {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <span className="text-sm font-semibold tracking-widest uppercase transition-colors duration-200" style={{ color: "var(--sp-fg-muted)" }}>
-            Why Spreelance
+            Why spreelance
           </span>
           <h2 className="mt-3 text-4xl sm:text-5xl font-bold transition-colors duration-200" style={{ color: "var(--sp-fg)" }}>
             Why Choose Us

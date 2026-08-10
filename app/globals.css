@@ -11,10 +11,10 @@
   --sp-fg-faint: #525252;
   --sp-border: rgba(255,255,255,0.1);
   --sp-border-hover: rgba(255,255,255,0.25);
-  --sp-icon-bg: #ffffff;
-  --sp-icon-fg: #000000;
-  --sp-btn-bg: #ffffff;
-  --sp-btn-fg: #000000;
+  --sp-icon-bg: linear-gradient(135deg, #8d54ff, #00d294);
+  --sp-icon-fg: #ffffff;
+  --sp-btn-bg: linear-gradient(90deg, #8d54ff, #00d294);
+  --sp-btn-fg: #ffffff;
   --sp-btn-hover: #e5e5e5;
   --sp-btn2-border: rgba(255,255,255,0.2);
   --sp-btn2-border-hover: rgba(255,255,255,0.5);
@@ -24,19 +24,21 @@
   --sp-badge-border: rgba(255,255,255,0.1);
   --sp-input-bg: #171717;
   --sp-input-border: rgba(255,255,255,0.1);
-  --sp-input-border-focus: rgba(255,255,255,0.4);
+  --sp-input-border-focus: rgba(141,84,255,0.6);
   --sp-nav-bg: rgba(0,0,0,0.8);
   --sp-nav-border: rgba(255,255,255,0.1);
   --sp-avatar-bg: #262626;
   --sp-avatar-ring: rgba(255,255,255,0.1);
   --sp-avatar-ring-hover: rgba(255,255,255,0.2);
-  --sp-grad-from: #ffffff;
-  --sp-grad-to: #a3a3a3;
+  --sp-grad-from: #8d54ff;
+  --sp-grad-to: #00d294;
   --sp-grid-line: rgba(255,255,255,0.3);
   --sp-step-bg: rgba(255,255,255,0.05);
   --sp-step-border: rgba(255,255,255,0.2);
-  --sp-check-bg: #ffffff;
-  --sp-check-fg: #000000;
+  --sp-check-bg: linear-gradient(135deg, #8d54ff, #00d294);
+  --sp-check-fg: #ffffff;
+  --sp-glow-1: rgba(141,84,255,0.55);
+  --sp-glow-2: rgba(0,210,148,0.45);
 }
 
 /* ── Light mode ── */
@@ -50,9 +52,9 @@ html.light {
   --sp-fg-faint: #a3a3a3;
   --sp-border: rgba(0,0,0,0.08);
   --sp-border-hover: rgba(0,0,0,0.2);
-  --sp-icon-bg: #000000;
+  --sp-icon-bg: linear-gradient(135deg, #8d54ff, #00d294);
   --sp-icon-fg: #ffffff;
-  --sp-btn-bg: #000000;
+  --sp-btn-bg: linear-gradient(90deg, #8d54ff, #00d294);
   --sp-btn-fg: #ffffff;
   --sp-btn-hover: #262626;
   --sp-btn2-border: rgba(0,0,0,0.15);
@@ -63,19 +65,21 @@ html.light {
   --sp-badge-border: rgba(0,0,0,0.08);
   --sp-input-bg: #ebebeb;
   --sp-input-border: rgba(0,0,0,0.1);
-  --sp-input-border-focus: rgba(0,0,0,0.4);
+  --sp-input-border-focus: rgba(141,84,255,0.5);
   --sp-nav-bg: rgba(255,255,255,0.85);
   --sp-nav-border: rgba(0,0,0,0.08);
   --sp-avatar-bg: #d4d4d4;
   --sp-avatar-ring: rgba(0,0,0,0.08);
   --sp-avatar-ring-hover: rgba(0,0,0,0.15);
-  --sp-grad-from: #000000;
-  --sp-grad-to: #525252;
+  --sp-grad-from: #8d54ff;
+  --sp-grad-to: #00a880;
   --sp-grid-line: rgba(0,0,0,0.12);
   --sp-step-bg: rgba(0,0,0,0.04);
   --sp-step-border: rgba(0,0,0,0.12);
-  --sp-check-bg: #000000;
+  --sp-check-bg: linear-gradient(135deg, #8d54ff, #00d294);
   --sp-check-fg: #ffffff;
+  --sp-glow-1: rgba(141,84,255,0.35);
+  --sp-glow-2: rgba(0,210,148,0.3);
 }
 
 html {
@@ -95,6 +99,12 @@ body {
   color: var(--sp-fg);
   font-family: var(--font-geist-sans, Arial, Helvetica, sans-serif);
   transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--sp-fg-subtle);
+  opacity: 1;
 }
 
 @keyframes fadeInUp {

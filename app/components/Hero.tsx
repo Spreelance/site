@@ -9,8 +9,8 @@ export default function Hero() {
     >
       {/* Subtle blobs */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full blur-3xl opacity-30" style={{ background: "var(--sp-avatar-bg)" }} />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full blur-3xl opacity-20" style={{ background: "var(--sp-avatar-bg)" }} />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full blur-3xl opacity-70" style={{ background: "var(--sp-glow-1)" }} />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full blur-3xl opacity-70" style={{ background: "var(--sp-glow-2)" }} />
       </div>
 
       {/* Grid overlay */}
@@ -45,7 +45,7 @@ export default function Hero() {
         </h1>
 
         <p className="text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed mb-12 transition-colors duration-200" style={{ color: "var(--sp-fg-muted)" }}>
-          We are <span className="font-semibold" style={{ color: "var(--sp-fg)" }}>Spreelance</span>, a team of 3
+          We are <span className="font-semibold" style={{ color: "var(--sp-fg)" }}>spreelance</span>, a team of 3
           specialists in Salesforce, Cloud Architecture, and Golang Microservices helping businesses
           build better systems.
         </p>
@@ -53,7 +53,7 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href="#contact"
-            className="group inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold text-base transition-colors duration-200"
+            className="group inline-flex items-center gap-2 px-8 py-4 rounded-full font-semibold text-base transition-colors duration-200"
             style={{ background: "var(--sp-btn-bg)", color: "var(--sp-btn-fg)" }}
           >
             Hire Us
@@ -61,7 +61,7 @@ export default function Hero() {
           </a>
           <a
             href="#services"
-            className="group inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold text-base border transition-colors duration-200"
+            className="group inline-flex items-center gap-2 px-8 py-4 rounded-full font-semibold text-base border transition-colors duration-200"
             style={{ borderColor: "var(--sp-btn2-border)", color: "var(--sp-btn2-fg)" }}
           >
             See Our Services

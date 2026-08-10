@@ -28,7 +28,7 @@ export default function Navbar() {
             <Zap className="w-4 h-4" style={{ color: "var(--sp-icon-fg)" }} />
           </div>
           <span className="font-bold text-lg tracking-tight" style={{ color: "var(--sp-fg)" }}>
-            Spreelance
+            spreelance.
           </span>
         </a>
 
@@ -46,7 +46,7 @@ export default function Navbar() {
           <ThemeToggle />
           <a
             href="#contact"
-            className="px-4 py-2 rounded-lg text-sm font-semibold transition-colors duration-200"
+            className="px-4 py-2 rounded-full text-sm font-semibold transition-colors duration-200"
             style={{ background: "var(--sp-btn-bg)", color: "var(--sp-btn-fg)" }}
           >
             Hire Us
@@ -85,7 +85,7 @@ export default function Navbar() {
           <a
             href="#contact"
             onClick={() => setOpen(false)}
-            className="mt-2 px-4 py-2 rounded-lg text-sm font-semibold text-center transition-colors"
+            className="mt-2 px-4 py-2 rounded-full text-sm font-semibold text-center transition-colors"
             style={{ background: "var(--sp-btn-bg)", color: "var(--sp-btn-fg)" }}
           >
             Hire Us

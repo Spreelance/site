@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Send, CheckCircle, Mail, Building2, User, FileText } from "lucide-react";
+import { Send, CheckCircle, AlertCircle, Mail, Building2, User, FileText } from "lucide-react";
 
 type FormData = {
   name: string;
@@ -10,19 +10,52 @@ type FormData = {
   description: string;
 };
 
+const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
+
 export default function Contact() {
   const [form, setForm] = useState<FormData>({ name: "", email: "", company: "", description: "" });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+
+    const botcheck = new FormData(e.currentTarget).get("botcheck");
+    if (botcheck) return;
+
     setLoading(true);
-    setTimeout(() => { setLoading(false); setSubmitted(true); }, 1200);
+    setError(null);
+
+    try {
+      const res = await fetch(WEB3FORMS_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
+          subject: `New project inquiry from ${form.name}`,
+          name: form.name,
+          email: form.email,
+          company: form.company,
+          description: form.description,
+        }),
+      });
+      const data = await res.json();
+
+      if (data.success) {
+        setSubmitted(true);
+      } else {
+        setError(data.message || "Something went wrong. Please try again.");
+      }
+    } catch {
+      setError("Network error. Please check your connection and try again.");
+    } finally {
+      setLoading(false);
+    }
   }
 
   const inputClass = "w-full px-4 py-3 rounded-lg text-sm outline-none transition-colors duration-200";
@@ -124,6 +157,14 @@ export default function Contact() {
                 className="p-6 sm:p-8 rounded-2xl border flex flex-col gap-5 transition-colors duration-200"
                 style={{ background: "var(--sp-card)", borderColor: "var(--sp-border)" }}
               >
+                <input
+                  type="text"
+                  name="botcheck"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  style={{ display: "none" }}
+                />
+
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div className="flex flex-col gap-1.5">
                     <label className="text-sm font-medium flex items-center gap-1.5 transition-colors duration-200" style={{ color: "var(--sp-fg-muted)" }}>
@@ -173,6 +214,13 @@ export default function Contact() {
                     onBlur={(e) => (e.target.style.borderColor = "var(--sp-input-border)")}
                   />
                 </div>
+
+                {error && (
+                  <div className="flex items-center gap-2 text-sm" style={{ color: "#ef4444" }}>
+                    <AlertCircle className="w-4 h-4 flex-shrink-0" />
+                    {error}
+                  </div>
+                )}
 
                 <button
                   type="submit"
